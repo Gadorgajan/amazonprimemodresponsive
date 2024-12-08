@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.prime-logo {
+    height: 50px;
+    width: 100px;
+    text-align: center;
+}
+
+.home-page {
+    background-color: #0e171e;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: #0e171e;
+    height: 60px;
+}
+
+.navbar .nav-link {
+    font-size: 20px;
+    color: #7f97a2;
+}
+
+.navbar .nav-link-active {
+    font-size: 20px;
+    color: #fff;
+}
+
+.movie-recommendation-carousel {
+    height: 200px;
+    width: 50vh;
+}
+
+.homepage-subtitles {
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.seemore-style {
+    color: #7f97a2;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.seemore-arrow-style {
+    color: #abaeb2;
+}
+
+.search-box {
+    width: 90%; 
+    max-width: 600px; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    font-size: 1rem; 
+    border-radius: 5px;
+  }
+
+.search-box {
+    background-color: #fff;
+    width: 90vw;
+    margin: 15px;
+    border-radius: 3px;
+}
+
+.search-box::placeholder {
+    color: silver;
+    font-style: italic;
+}
+
+.browseby-search {
+    background-color: #293344;
+    background-size: 90%;
+    height: 60px;
+    color: #fff;
+    border-radius: 3px;
+    width: 90%;
+}
+
+.search-titles {
+    color: #fff;
+    font-size: 30px;
+}
+
+.search-page {
+    background: linear-gradient(
+        to bottom, 
+        rgba(3, 37, 65, 1) 0%,   
+        rgba(15, 32, 39, 1) 40%, 
+        rgba(24, 40, 72, 1) 70%, 
+        rgba(3, 37, 65, 1) 100%  
+      );
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.different-genres {
+    color: #41545f;
+    font-size: 16px;
+}
+
+.search-seemore-style {
+    color: #049dd3;
+    font-size: 16px;
+    margin-bottom: 100px;
+}
+
+.download-page {
+    background-image: linear-gradient(to right bottom, #1d4c65, #1b3e52, #183040, #14232f, #0e171e);
+    height: 100vh;
+    text-align: center;
+}
+
+#section-downloads {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.auto-download-info {
+    font-size: 20px;
+}
+
+.manage-style {
+    font-size: 16px;
+    color: #049dd3;
+}
+
+.auto-download-info {
+    font-size: 16px;
+    color: #fff;
+}
+
+.download-icon {
+    color: #13b9ef;
+    font-size: 32px;
+}
+
+.download-info {
+    color: #fff;
+    font-size: 22px;
+}
+
+.download-deatils-container {
+    padding: 12px;
+    background-color: #0e171e;
+    color: #fff;
+}
+
+.mystuff-page {
+    background-image: linear-gradient(to right bottom, #1d4c65, #1b3e52, #183040, #14232f, #0e171e);
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+
+.mystuff-option-page {
+    background-image: linear-gradient(to bottom, #000 40%, to right bottom, #1d4c65, #1b3e52, #183040, #14232f, #0e171e);
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+
+.filter-button {
+    color: #fff;
+    background-color: #7f97a2;
+    border-width: 0px;
+    border-radius: 3px;
+    padding: 6px;
+    width: 60px;
+}
+
+.filter-bground {
+    background-color: #000;
+    padding: 8px;
+    background-size: cover;
+}
+
+.user-icon {
+    color: #1a759b;
+    font-size: 50px;
+}
+
+.user-name {
+    color: #fff;
+    font-weight: 600;
+}
+
+#section-mystuff {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.switch-profile-option {
+    text-align: left;
+    font-size: 10px;
+    color: #718a97;
+}
+
+.mystuff-menu-options {
+    font-size: 18px;
+    color: #7f97a2;
+}
+
+.setting-style {
+    color: #7f97a2;
+    font-size: 26px;
+    margin: 20px;
+}
+
+.browse-button {
+    background-color: transparent;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: #7f97a2;
+    border-style: solid;
+    padding: 10px;
+    color: #fff;
+}
+
+.heading-background {
+    background-color: #0e171e;
+    background-size: cover;
+    margin-bottom: 200px;
+}
+
+.apply-margin {
+    margin-top: 160px;
+}
+
+.pages-heading {
+    color: #fff;
+    text-align: center;
+    margin-top: 16000rem;
+    text-decoration: underline;
+}

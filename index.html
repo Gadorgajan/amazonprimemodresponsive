@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    
+    <style>
+      .prime-logo {
+        height: 50px;
+        width: 100px;
+        text-align: center;
+    }
+    
+    .home-page {
+        background-color: #0e171e;
+        background-size: cover;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        height: 100vh;
+    }
+    
+    .navbar {
+        background-color: #0e171e;
+    }
+    
+    .navbar .nav-link {
+        font-size: 20px;
+        color: #7f97a2;
+    }
+    
+    .navbar .nav-link-active {
+        font-size: 20px;
+        color: #fff;
+    }
+    
+    .movie-recommendation-carousel {
+        height: 200px;
+        width: 50vh;
+    }
+    
+    .homepage-subtitles {
+        color: #fff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    .seemore-style {
+        color: #7f97a2;
+        font-size: 16px;
+        font-weight: normal;
+    }
+    
+    .seemore-arrow-style {
+        color: #abaeb2;
+    }
+    
+    .default-searchbox-text {
+        color: #b7b8ba;
+    }
+    
+    .search-box {
+        background-color: #fff;
+        width: 90vw;
+        margin: 15px;
+        border-radius: 3px;
+    }
+    
+    .browseby-search {
+        background-color: #293344;
+        background-size: cover;
+        color: #fff;
+        border-radius: 3px;
+    }
+    
+    .search-titles {
+        color: #fff;
+        font-size: 30px;
+    }
+    
+    .search-page {
+        background-color: #0e171e;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .different-genres {
+        color: #41545f;
+        font-size: 16px;
+    }
+    
+    .search-seemore-style {
+        color: #049dd3;
+        font-size: 16px;
+    }
+    
+    .download-page {
+        background-image: linear-gradient(to right bottom, #1d4c65, #1b3e52, #183040, #14232f, #0e171e);
+        height: 100vh;
+        text-align: center;
+    }
+    
+    #section-downloads {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .auto-download-info {
+        font-size: 20px;
+    }
+    
+    .manage-style {
+        font-size: 16px;
+        color: #049dd3;
+    }
+    
+    .auto-download-info {
+        font-size: 16px;
+        color: #fff;
+    }
+    
+    .download-icon {
+        color: #13b9ef;
+        font-size: 32px;
+    }
+    
+    .download-info {
+        color: #fff;
+        font-size: 22px;
+    }
+    
+    .download-deatils-container {
+        padding: 12px;
+        background-color: #0e171e;
+        color: #fff;
+    }
+    
+    .mystuff-page {
+        background-image: linear-gradient(to right bottom, #1d4c65, #1b3e52, #183040, #14232f, #0e171e);
+        background-size: cover;
+        height: 100vh;
+        text-align: center;
+    }
+    
+    .mystuff-option-page {
+        background-image: linear-gradient(to bottom, #000 40%, to right bottom, #1d4c65, #1b3e52, #183040, #14232f, #0e171e);
+        background-size: cover;
+        height: 100vh;
+        text-align: center;
+    }
+    
+    .filter-button {
+        color: #fff;
+        background-color: #7f97a2;
+        border-width: 0px;
+        border-radius: 3px;
+        padding: 6px;
+        width: 60px;
+    }
+    
+    .filter-bground {
+        background-color: #000;
+        padding: 8px;
+        background-size: cover;
+    }
+    
+    .user-icon {
+        color: #1a759b;
+        font-size: 50px;
+    }
+    
+    .user-name {
+        color: #fff;
+        font-weight: 600;
+    }
+    
+    #section-mystuff {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .switch-profile-option {
+        text-align: left;
+        font-size: 10px;
+        color: #718a97;
+    }
+    
+    .mystuff-menu-options {
+        font-size: 18px;
+        color: #7f97a2;
+    }
+    
+    .setting-style {
+        color: #7f97a2;
+        font-size: 26px;
+        margin: 20px;
+    }
+    
+    .browse-button {
+        background-color: transparent;
+        border-radius: 3px;
+        border-width: 1px;
+        border-color: #7f97a2;
+        border-style: solid;
+        padding: 10px;
+        color: #fff;
+    }
+    
+    .heading-background {
+        background-color: #0e171e;
+        background-size: cover;
+        margin-bottom: 200px;
+    }
+    
+    .apply-margin {
+        margin-top: 160px;
+    }
+    
+    .pages-heading {
+        color: #fff;
+        text-align: center;
+        margin-top: 30px;
+        text-decoration: underline;
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="fixed-top heading-background">
+      <div class="d-flex flex-row justify-content-center m-3">
+          <img src="https://www.mobilebit.com.br/wp-content/uploads/2020/03/prime-video-novo-recurso.jpg" class="d-none d-lg-block prime-logo" alt="Amazon Prime Logo"/>
+      </div>
+      <nav class="navbar navbar-expand-lg">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav1">
+              <ul class="navbar-nav mx-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#sectioninhomehomepage">Home </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#sectioninhometvshows">TV Shows</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#sectioninhomemovies">Movies</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#sectioninhomekids">Kids</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+    </div> 
+    <div class="container-fluid" id="section-home">
+      <div class="row">
+          <div class="home-page col-12 mb-5 h-100">           
+      
+        <div id="sectioninhomehomepage" class="apply-margin">
+          <h1 class="pages-heading">Home</h1>
+          <div id="carouselExampleIndicators" class="carousel slide mb-3" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://resizing.flixster.com/Y8bjTo8-l3miQNhxBnR9PbFaMDY=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p16809215_v_h8_aj.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 1">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/03/fantastic-beasts-3-waht-to-know.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 2">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/5f6175a529131a9ac24e18d44b32bd7e7d5f6307746472ae5a6701ef9db5189d.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 3">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://images.filmibeat.com/ta/img/2024/06/f1dz0tov1-1717434059.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 3">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/863eb9baf0a65cbdf156d920b1295b7b0750a5eee09709ac0f10b1289f8d90a6.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 5">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://www.joker.movie/images/poster2.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 6">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://m.media-amazon.com/images/S/pv-target-images/a3ee181f99ff83fe25cccbde9cab839ff04387d0e948cad43220f4d595fc2235._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/g-l/hbomaxus/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1556,885,285,78_SX720_FMjpg_.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://images.hindustantimes.com/rf/image_size_960x540/HT/p2/2017/04/07/Pictures/karthi-veliyidai-aditi-rao-hydari-kaatru-poster_c5458614-1b6a-11e7-8dd7-d947b0232760.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00116329-fwkntksczf-landscape.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          
+          <h1 class="homepage-subtitles">Watch for FREE - Trending Shows  <span class="seemore-style">See more <span class="seemore-arrow-style">></span></h1>  
+            <div id="carouselExampleIndicators1" class="carousel slide mb-3">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
+              </ol>
+              
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://i0.wp.com/highschool.latimes.com/wp-content/uploads/2018/06/share-1.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 1">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://www.animationmagazine.net/wordpress/wp-content/uploads/IF-Character-posters.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 2">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://wp-uploads.qualbert.com/2023/04/EDR-Hero-1170x720.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 3">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://image.nakkheeran.in/cdn/farfuture/OHS8mgZtdVlpgW3dWtrbH0_vgQ5eoiU5luNy6eWkdZ4/1678277183/sites/default/files/2023-03-08/128.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 3">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://knightedgemedia.com/wp-content/uploads/2023/12/disney-maleficent-3-banner.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 5">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/beb125c9ebabf12d1dc236832a97ccb50f9b166bd32d3999e54b3744cd9c2019._UR1920,1080_SX720_FMjpg_.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 6">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://i0.wp.com/www.bigglasgowcomicpage.com/wp-content/uploads/2021/05/it-poster-1200x900-1.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://cdn.marvel.com/content/1x/deadpool-and-wolverine-home-ent-article-card.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://facts.net/wp-content/uploads/2023/06/41-facts-about-the-movie-the-wolf-of-wall-street-1687443469.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://dx35vtwkllhj9.cloudfront.net/universalstudios/despicable-me-4/images/regions/us/share.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/d17342d7f424ad9c379c1512acc1076ea2fe2a574777a16add781ee8a70cbdd7.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/58e8a7988c6ba4b1979709adb606ca5b59a39eaf6fb02060bcdfef01ef1d8909.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+    
+              </div>
+            
+              <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              
+              <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          
+          <h1 class="homepage-subtitles">Amazon Original Series  <span class="seemore-style">See more <span class="seemore-arrow-style">></span></h1>   
+            <div id="carouselExampleIndicators2" class="carousel slide mb-3">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+              </ol>
+              
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://www.thestatesman.com/wp-content/uploads/2022/02/best.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 1">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/31157ab1e4039d2f7d9f11387964f5f3d5fcdb76b3244b088bc09b4dd6249ba4._UR1920,1080_SX720_FMjpg_.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 2">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://assets.aboutamazon.com/0e/cb/ff25b4dd484da76277c5c402a96e/byso-s1-prposterframe-ensemble-1280x720-evrgrn-final-en-us-prico.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 3">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/02/reacher-cast-guide.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 3">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/473fd8bc878799c1a035cb13c688edd9eb6d240d426abf34e0bf3c1dde95724b.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 5">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://deadline.com/wp-content/uploads/2024/04/image001.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 6">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2018/10/Alexa-Davalos-and-Rufus-Sewell-in-Man-in-the-High-Castle.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://assets.aboutamazon.com/dims4/default/229a8c2/2147483647/strip/true/crop/1279x720+0+0/resize/1240x698!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F96%2Fe7%2F5468a2134ab6ba6b0b04d014c102%2Fimage1.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://riot-us.com/wp-content/uploads/2024/06/capc_s1_static16x9_gotham_3840x2160_pre_pv_final_en-us_prico.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://m.media-amazon.com/images/S/pv-target-images/0aa3d78d5c0070c0d2b675f2ea97e8d3fdce03546006a48c496f24c429ca4f1f.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://www.prabhatkhabar.com/wp-content/uploads/2024/07/mirzapur.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://static.toiimg.com/thumb/msid-105470976,width-1280,height-720,resizemode-4/105470976.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+    
+              </div>
+            
+              <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              
+              <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+    
+          <h1 class="homepage-subtitles">Recommended Movies  <span class="seemore-style">See more <span class="seemore-arrow-style">></span></h1>     
+            <div id="carouselExampleIndicators3" class="carousel slide mb-3">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators3" data-slide-to="3"></li>
+              </ol>
+              
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://static.wixstatic.com/media/a12629_955f97d2afcb473ba96c1b0c46b78c54~mv2.jpg/v1/fill/w_1920,h_1080,al_c,q_90/a12629_955f97d2afcb473ba96c1b0c46b78c54~mv2.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 1">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/9bdf1410f018d974a080724f9b8b016ff4be70c8a2a3b41cbae8867cb188a27c.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 2">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://resizing.flixster.com/uE_9D8M1goaII5_KjrrOD7jo54A=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p26478047_v_h9_af.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 3">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://staticg.sportskeeda.com/editor/2023/07/10483-16905134340828-1920.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 3">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/653f861939273b2f4e6f40af0ee9780f41a4a023dde0d37d0778310033be227c.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 5">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://www.vmcdn.ca/f/files/shared/feeds/cp/2024/05/2024050513058-6637bdb56013bbf0db31ab3ejpeg.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 6">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://img.onmanorama.com/content/dam/mm/en/entertainment/movie-reviews/images/2024/6/7/golam-latest.jpg.transform/schema-4x3/image.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://www.heavenofhorror.com/wp-content/uploads/2024/03/imaginary-2024-horror-review.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/d89f78844fffc9147418e241f5a4e6a14a5c74feeee710407888564d8c6b1e58.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://m.media-amazon.com/images/S/pv-target-images/5568c716c0bfd4577d0f54af9dfe390bed24b2286f6531895d0de041db4ad467.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/07101c9b51dd0ce0bdad60317d5f197beeb11b6b0821a85a823eac3113c6b8f6._SX1080_FMjpg_.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://i0.wp.com/bob-the-movie-man.com/wp-content/uploads/2024/05/The-Strangers-C1-poster-1.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+    
+              </div>
+            
+              <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              
+              <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div> 
+            <hr class="text-white">  
+        </div> 
+        
+        <div id="sectioninhometvshows">
+          <h1 class="pages-heading">TV Shows</h1>
+          <div id="carouselExampleIndicators4" class="carousel slide mb-3" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators4" data-slide-to="2"></li>
+              </ol>
+              
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/73e2fe09e2531777013bb957ab1726ddcaf9a90526fe7fd575aec1a7d22945e8.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 1">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/82faa7f4a1611633f214de875b81c48a16704831211c85c41e107096d9fece6d.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 2">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://static.next-episode.net/tv-shows-images/huge/the-flash.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 3">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://m.media-amazon.com/images/S/pv-target-images/0705e32f6d314bad7eba9d35e74daafbca16857d5b4b937d16be1726d574ca5f.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 3">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/2aaaf0101d8fc8cb5e6cbe17f898d60e9519ee37e839cf91542794fb33b98564.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 5">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://ntvb.tmsimg.com/assets/p8282918_b_h8_bn.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 6">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://beebom.com/wp-content/uploads/2024/07/gen-v-season-2.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/473fd8bc878799c1a035cb13c688edd9eb6d240d426abf34e0bf3c1dde95724b.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://deadline.com/wp-content/uploads/2024/04/image001.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              
+              <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          
+          <h1 class="homepage-subtitles">Watch for FREE - Trending Shows  <span class="seemore-style">See more <span class="seemore-arrow-style">></span></h1>  
+            <div id="carouselExampleIndicators5" class="carousel slide mb-3">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators5" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators5" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators5" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators5" data-slide-to="3"></li>
+              </ol>
+              
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/6e3d145a8f6afac1fdbae4ed7ee98afe2778e8c32f89cc8d1420c7cc76f82d6e.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 1">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-17532,resizemode-75,msid-107701470/news/international/us/young-sheldon-season-7-when-and-where-can-the-new-season-be-streamed-in-all-countries.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 2">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/a87d41f45345d8abd4097dda64d40b0333cf1134c2d3e18e4f8e442e14564b19.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 3">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://images.prismic.io/star-trek-untold/c53ecaff-0853-4202-badb-33eded368326_22373_STDC_S5_Official_Trailer_PR_Horz_16x9_3840x2160.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 3">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://knightedgemedia.com/wp-content/uploads/2023/12/disney-maleficent-3-banner.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 5">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/6b8e2acc37990972190b6e9d0486e421fd69796665b7b66d89f38ebfd6f26589.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 6">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://resizing.flixster.com/sBmqIRQsNtyHQD1CxweYrIfVFFM=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p23584602_b_h9_ag.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://static.toiimg.com/thumb/msid-105470976,width-1280,height-720,resizemode-4/105470976.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/1545c1c1c89d476d35029056ddb248ebb9523acf7488250d0370e8a8fa5e40ad.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://upload.wikimedia.org/wikipedia/en/4/4d/Sherlock_titlecard.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://assets.aboutamazon.com/dims4/default/229a8c2/2147483647/strip/true/crop/1279x720+0+0/resize/1240x698!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F96%2Fe7%2F5468a2134ab6ba6b0b04d014c102%2Fimage1.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://economictimes.indiatimes.com/thumb/msid-108474053,width-1600,height-900,resizemode-4,imgsize-256004/outer-range-season-2-release-date-on-prime-video-what-we-know-so-far.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+            
+              <a class="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              
+              <a class="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          
+          <h1 class="homepage-subtitles">Amazon Original Series  <span class="seemore-style">See more <span class="seemore-arrow-style">></span></h1>   
+            <div id="carouselExampleIndicators6" class="carousel slide mb-3">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators6" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators6" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators6" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators6" data-slide-to="3"></li>
+              </ol>
+              
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/4f53d41f69612a17d3e9170b78ab2787b4b51f83bf7e22357bdfa391bfd7864c.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 1">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://1.bp.blogspot.com/-tEfvbgrEJDA/VEdfllqwJBI/AAAAAAABiVk/ShW3rUXkqSQ/s1600/Under%2Bthe%2BDome%2Bheader%2B1.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 2">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://resizing.flixster.com/Umubfp25u4Neqq2gSgyHUgEjfBY=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p18829068_b_h9_aa.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 3">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://m.media-amazon.com/images/S/pv-target-images/276303bbac654d31e6d61c13853e6c809e52cd82aa35f1a4c205be45ac08aaf1.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 3">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://i.ytimg.com/vi/EpKkE4b6Zl8/maxresdefault.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 5">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://ntvb.tmsimg.com/assets/p184930_b_h8_ac.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 6">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://m.media-amazon.com/images/S/pv-target-images/57ed03507a3e99d54ac4456697f0c16ad46151b59ceead3fee6760c6f43ca6e1.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/bbf861541c168d749a265f5ced686a698a327a02763dbb33621bde9ebe927eac.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://riot-us.com/wp-content/uploads/2024/06/capc_s1_static16x9_gotham_3840x2160_pre_pv_final_en-us_prico.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://resizing.flixster.com/vMO4S4sFihQFNObCs0U5s9WHfhU=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p13232843_b_h10_av.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://images.squarespace-cdn.com/content/v1/5fede335ce668d5ea535924a/1633816292612-97H7SDEL9ZISCU0DGQ12/Nine+perfect+strangers+HULU.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/4d673c33ca158dc570b231ff557a6606784c2740125faebc2e06bae27285a81d.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+            
+              <a class="carousel-control-prev" href="#carouselExampleIndicators6" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              
+              <a class="carousel-control-next" href="#carouselExampleIndicators6" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+      
+          <h1 class="homepage-subtitles">Top TV  <span class="seemore-style">See more <span class="seemore-arrow-style">></span></h1>     
+            <div id="carouselExampleIndicators7" class="carousel slide mb-3">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators7" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators7" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators7" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators7" data-slide-to="3"></li>
+              </ol>
+              
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/8642101cece661111dbabfdc38762dbad90f63983f85a83667c0a5fa12cab50e.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 1">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/6dc5af0a376fee0ded2bcb751750cabddbc32ca740540b32050d527799b9910c.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 2">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/da965f3ac7162bf10c0f8d99c7b33846fe7ca055e71ed0286732ecea974be565.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 3">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://m.media-amazon.com/images/S/pv-target-images/dd0c3f983018e14e7533ce6d7153ec2c6a0abb16cf884f0d23ad1dd862e50446.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 3">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://w0.peakpx.com/wallpaper/988/988/HD-wallpaper-tv-show-arrow-arrow-dc-comics-arrow-tv-show-oliver-queen-stephen-amell.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 5">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/e8d373859b21c2a77af1f8b2604c3d67afe32c766f2da4c3f8a8d50d81d0f668.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 6">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://m.media-amazon.com/images/S/pv-target-images/c3ab2870e8cf8dccc8d7db38cb0dbd2e02c9fcf6fb3d1a58136f99a662abd33c.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/b7802804dc2a3bdeb65003210eeed00b64191b6f736b773a1d89872356499360.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://i0.wp.com/maxblizz.com/wp-content/uploads/2023/04/The-Continental-series.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://m.media-amazon.com/images/S/pv-target-images/2745382833c26f576e1c63466a8cb9ee8ff1f30d3cc05e90c009d014fa0b07bc.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/98b0eda50d087b341ca1b6a4ad0d5244d9a3955722151350eecfb604adedbb62.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/08388b554e96741946e3ef2248216749389eaa5b14047f475cb1c0d543a17abd.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+            
+              <a class="carousel-control-prev" href="#carouselExampleIndicators7" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              
+              <a class="carousel-control-next" href="#carouselExampleIndicators7" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>  
+            <hr class="text-white"> 
+        </div>  
+        
+        <div id="sectioninhomemovies">
+          <h1 class="pages-heading">Movies</h1>
+          <div id="carouselExampleIndicators8" class="carousel slide mb-3" data-ride="carousel">
+              <ol class="carousel-indicators8">
+                <li data-target="#carouselExampleIndicators8" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators8" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicator8" data-slide-to="2"></li>
+              </ol>
+              
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABaGxzw3PGm2MpB0LglxV_55Mfn8QZMsK7GcB6gurAEzOgadP_Yd_FB9cNQF9oaeAs1SYf7HhEgyh5cotho79JpmtIU-RI54kkNsL.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 1">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/994e93e505985161cc4d6f4d6dac6c8a576365aa2c344274ea6baf48e7fad947.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 2">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/aace82190242fe8ee13ea03d642d2aab484e9c93aaad0c6ddfc6c12bcccd53ef.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 3">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://threepennypress.org/wp-content/uploads/2017/12/Thor-Ragnarok-banner-3-1-600x372.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 3">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://venkatarangan.com/wp-content/uploads/2022/07/dejavu-2022.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 5">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://peepingmoon-cdn.sgp1.digitaloceanspaces.com/engpeepingmoon/230921044911-614c62afd5959eddie-redmayne-jude-law-fantastic-beasts-3-the-secrets-of-dumbledore-resized-.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 6">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://m.media-amazon.com/images/S/pv-target-images/12482341347420f416f431967616ce40655b3d97a46d549f37bdff23792d47b8.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://nonstopnerd.com/wp-content/uploads/2022/07/mb1.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://freestonecountytimesonline.com/wp-content/uploads/2022/03/Lost-City.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <a class="carousel-control-prev" href="#carouselExampleIndicators8" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              
+              <a class="carousel-control-next" href="#carouselExampleIndicators8" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          
+          <h1 class="homepage-subtitles">Watch for FREE - Trending Shows  <span class="seemore-style">See more <span class="seemore-arrow-style">></span></h1>  
+            <div id="carouselExampleIndicators9" class="carousel slide mb-3">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators9" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators9" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators9" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators9" data-slide-to="3"></li>
+              </ol>
+              
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://1.bp.blogspot.com/-VXBWPnK2Gy8/VmxR8byWjOI/AAAAAAAAdRM/pA-oPP7SB0I/s1600/FOX_GoldenGlobe_BestActress_Comedy_v1.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 1">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://cinemachaat.com/wp-content/uploads/2020/04/poster-2.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 2">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://images.saymedia-content.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_1200/MTc0NTAyNDY1Mjg5MzMyNzI2/it-chapter-two-2019-a-carnival-of-horrors-movie-review.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 3">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://m.media-amazon.com/images/S/pv-target-images/5677483973210b4b510e9b7ed2471fedc6d500d37052d2dd9d624da65be52070.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 3">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00351087-sxntkbzwee-landscape.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 5">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://i.ytimg.com/vi/7psP7xBEa28/sddefault.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 6">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://pophorror.com/wp-content/uploads/2024/03/1-13802253526-1.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/d5cf160c17cebcc23a30a6bb4b870fb3a8990dbba0027329fe8b908519a0515e.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://images.thedirect.com/media/article_full/aquaman-2-art.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://m.media-amazon.com/images/S/pv-target-images/df0a9eebc3d0e3a30c9c9e4caca125bc3048012d3e3e35f81f8d9e06f92e1811.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://images.indianexpress.com/2016/11/fantastic-beasts-and-where-to-find-them_1200.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://images.hindustantimes.com/rf/image_size_960x540/HT/p2/2017/04/07/Pictures/karthi-veliyidai-aditi-rao-hydari-kaatru-poster_c5458614-1b6a-11e7-8dd7-d947b0232760.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+            
+              <a class="carousel-control-prev" href="#carouselExampleIndicators9" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              
+              <a class="carousel-control-next" href="#carouselExampleIndicators9" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          
+          <h1 class="homepage-subtitles">Top Movies  <span class="seemore-style">See more <span class="seemore-arrow-style">></span></h1>   
+            <div id="carouselExampleIndicators10" class="carousel slide mb-3">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators10" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators10" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators10" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators10" data-slide-to="3"></li>
+              </ol>
+              
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://c4.wallpaperflare.com/wallpaper/559/622/517/movies-hollywood-movies-wallpaper-preview.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 1">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/5f6175a529131a9ac24e18d44b32bd7e7d5f6307746472ae5a6701ef9db5189d.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 2">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://images.businessupturn.com/wp-content/uploads/2023/03/Untitled-design-11-3.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 3">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://static.tnn.in/thumb/msid-105091111,thumbsize-140670,width-1280,height-720,resizemode-75/105091111.jpg?quality=100" class="img-fluid movie-recommendation-carousel" alt="Movie 3">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/061e4e2cd7a256c9f2ef6c6f469b77dd1b30b841272b185089c3642d886fb51d.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 5">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://djmmtgamechangerdoc.wordpress.com/wp-content/uploads/2022/02/uncharted-movie-cover.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 6">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://avinashr13.wordpress.com/wp-content/uploads/2019/02/sagaa-fb.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://www.hindustantimes.com/ht-img/img/2023/09/08/1600x900/John_Wick_Chapter_4_1694186139487_1694186166275.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://staticg.sportskeeda.com/editor/2024/03/62a4f-17114921414643-1920.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://images.thedirect.com/media/article_full/spid-blu-ray.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/481ba439258affc1a2d29728e80164658bc2ff7f0ddfa333ee387e04538af0f2.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://content.tupaki.com/twdata/2019/0519/news/Movie-Review--NGK-1559302475-11.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+            
+              <a class="carousel-control-prev" href="#carouselExampleIndicators10" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              
+              <a class="carousel-control-next" href="#carouselExampleIndicators10" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+      
+          <h1 class="homepage-subtitles">Recommended Movies  <span class="seemore-style">See more <span class="seemore-arrow-style">></span></h1>     
+            <div id="carouselExampleIndicators11" class="carousel slide mb-3">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators11" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators11" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators11" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators11" data-slide-to="3"></li>
+              </ol>
+              
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/17a5b6523b48e97013e08e186799049fde32b1e3f3197ff4a147f7182ee6873b.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 1">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://media.assettype.com/nationalherald%2F2021-01%2F6859c50c-0934-47a4-ab3a-ecb45f9a8096%2FMarra.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 2">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/7a773a78a7e5eb9cc3969ca0840bd36abbca80f98431d52d91e4610992ec13d0.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 3">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://m.media-amazon.com/images/S/pv-target-images/7e4e5f3da2f918487f06a591a3bc102f60e13113ac8d8f68620e9eadcdb6e2cc.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 3">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/d1d9ffe902bcd507d6e33dd8721a81b87157d2db583476ae516b2577f9cb5833.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 5">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00323897-juqxlncgbz-landscape.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 6">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://m.media-amazon.com/images/I/71q1bGQ+l7L._AC_UF1000,1000_QL80_.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://imagesvs.oneindia.com/img/2024/08/raayan1-1724391046.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00302494-lyaexcnbpa-landscape.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://www.bollywoodhungama.com/wp-content/uploads/2019/08/War-01-3.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://christopherjohnlindsay.com/wp-content/uploads/2024/04/twilight-movie-poster-1.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://venkatarangan.com/wp-content/uploads/2014/01/the-wolf-of-wall-street.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+            
+              <a class="carousel-control-prev" href="#carouselExampleIndicators11" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              
+              <a class="carousel-control-next" href="#carouselExampleIndicators11" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div> 
+            <hr class="text-white">  
+        </div>
+      
+        <div id="sectioninhomekids">
+          <h1 class="pages-heading">Kids</h1>
+          <div id="carouselExampleIndicators12" class="carousel slide mb-3" data-ride="carousel">
+              <ol class="carousel-indicators12">
+                <li data-target="#carouselExampleIndicators12" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators12" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicator12" data-slide-to="2"></li>
+              </ol>
+              
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://img.indiaforums.com/article/1280x720/20/2660-review-wish-is-disneys-tribute-on-magical-100-years-if-only-the-magic-was-prevalent-in-the-film-thou.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 1">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://i.ytimg.com/vi/Ajx0ekqbIiA/maxresdefault.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 2">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://akamaividz2.zee5.com/image/upload/w_1170,h_658,c_scale/resources/0-0-1z5549733/list/ImageTitle4afdb19496ea49359e1fbe34f45147f5.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 3">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://cdn.theplaylist.net/wp-content/uploads/2016/04/17120744/ELEMENTAL_ONLINE-USE-m328_152_pub.pub16.222-750x400.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 3">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://www.boorooandtiggertoo.com/wp-content/uploads/2019/08/Dora_PayoffQuad_S-NEW-1280x960.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 5">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://www.dreamworks.com/storage/cms-uploads/boss-baby-2-seo-share2.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 6">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://v3img.voot.com/v3Storage/assets/how-to-train-your-dragon-the-hidden-world-16x9-1697774543578.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://thumbnails.cbsig.net/CBS_Production_Entertainment_VMS/2022/04/14/2023121475896/STH2_SAlone_16_9_1920x1080_1322128_1920x1080.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://resizing.flixster.com/jTbBMY_UKUg_VnJvJN92YzGjiNI=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p16236207_v_h9_aj.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <a class="carousel-control-prev" href="#carouselExampleIndicators12" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              
+              <a class="carousel-control-next" href="#carouselExampleIndicators12" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          
+          <h1 class="homepage-subtitles">Top TV for Kids and Family  <span class="seemore-style">See more <span class="seemore-arrow-style">></span></h1>  
+            <div id="carouselExampleIndicators13" class="carousel slide mb-3">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators13" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators13" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators13" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators13" data-slide-to="3"></li>
+              </ol>
+              
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://v3img.voot.com/v3Storage/assets/16x9-1719466651486.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 1">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://v3img.voot.com/jioimage/newcpp/64c3d7098af7dfd3b699d740/64c3d7098af7dfd3b699d740_1690556571208_aa.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 2">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://origin-staticv2.sonyliv.com/videoasset_images/hotel_transylvania_sep_landscape_thumb.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 3">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_3ds_25/SI_3DS_TheAdventuresofTinTin_enGB_image1600w.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 3">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://table9mutant.wordpress.com/wp-content/uploads/2016/06/img_0009.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 5">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://images-cdn.ubuy.co.in/63d70a230a5435610d295ac3-cars-framed-disney-pixar-movie-poster.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 6">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://static.wikia.nocookie.net/fanfiction/images/1/16/The_lion_king_by_kmjoen-dajauaw.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://static.wikia.nocookie.net/fanmade-films-4/images/3/3d/Ice_Age_2002_poster_9.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/a78e9c9aea1a44d5ccdb02d077c202c5d433004585a1c74934b6c809a1020f7a._UR1920,1080_SX720_FMjpg_.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://www.intofilm.org/intofilm-production/scaledcropped/970x546https%3A/intofilm-buckets-production-305862963141-resources.s3.eu-west-1.amazonaws.com/intofilm-production/uploads/puss-in-boots-resource-page-header.jpg/puss-in-boots-resource-page-header.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/M/MV5BMTgyNDczNTY5MV5BMl5BanBnXkFtZTgwNjY2ODAxMzE@._V1_FMjpg_UX1000_.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00046526-abatdzjqdf-landscape.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+            
+              <a class="carousel-control-prev" href="#carouselExampleIndicators13" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              
+              <a class="carousel-control-next" href="#carouselExampleIndicators13" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          
+          <h1 class="homepage-subtitles">Kids and Family Movies  <span class="seemore-style">See more <span class="seemore-arrow-style">></span></h1>   
+            <div id="carouselExampleIndicators14" class="carousel slide mb-3">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators14" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators14" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators14" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators14" data-slide-to="3"></li>
+              </ol>
+              
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://www.dreamworks.com/storage/cms-uploads/the-bad-guys-share-image.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 1">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/4adb489c4cca582d891b3a65044e7a0c2b5f93cd5380ceb622aaa1b0c9f28df0.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 2">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://cdn.theplaylist.net/wp-content/uploads/2016/04/17120744/ELEMENTAL_ONLINE-USE-m328_152_pub.pub16.222-750x400.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 3">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://static.wikia.nocookie.net/thatguywiththeglasses/images/a/ac/Monster_House_NC.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 3">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/I/81neiCeADPL._AC_UF1000,1000_QL80_.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 5">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://moviebabble.com/wp-content/uploads/2017/12/Ferdinand.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 6">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://wallpapers.com/images/hd/the-emoji-movie-wide-poster-yy3mopebylw2s6bt.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://vincentloy.wordpress.com/wp-content/uploads/2012/11/6a013481198b41970c016767c400f7970b-500wi.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://cdn.mrskathyking.com/wp-content/uploads/2020/03/13115638/2-lesson-from-onward.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://www.murphysmultiverse.com/wp-content/uploads/2022/02/Turning-Red.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://static.wikia.nocookie.net/thomas-beauregard/images/0/09/The_Croods_2.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/c5bddd199ce132190642d3d6f8958cee73821478a9e8dfc9857a0917f3851952.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+            
+              <a class="carousel-control-prev" href="#carouselExampleIndicators14" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              
+              <a class="carousel-control-next" href="#carouselExampleIndicators14" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+      
+          <h1 class="homepage-subtitles">Recommended Movies  <span class="seemore-style">See more <span class="seemore-arrow-style">></span></h1>     
+            <div id="carouselExampleIndicators15" class="carousel slide mb-3">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators15" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators15" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators15" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators15" data-slide-to="3"></li>
+              </ol>
+              
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://v3img.voot.com/v3Storage/assets/secret-life-of-pets--16_9-1692455797239.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 1">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://ntvb.tmsimg.com/assets/p11730_v_h10_sk.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 2">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://upload.wikimedia.org/wikipedia/en/5/50/A_Christmas_Carol_2019_BBC.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 3">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://facts.net/wp-content/uploads/2023/06/49-facts-about-the-movie-elf-1687437372.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 3">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://images.squarespace-cdn.com/content/v1/5b18735a3917ee20d18a2117/1721170197207-QN50S3I2AIN0BZOWRZ4Y/scale.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 5">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://wallpapers.com/images/hd/the-addams-family-2-white-poster-qro9crmolenpwyef.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 6">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://m.media-amazon.com/images/S/pv-target-images/6ce0930654e61adf4443c838827143b05f3eeb62ffc84f64442cce43a9db7a32.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://m.media-amazon.com/images/S/pv-target-images/fedc090724a79b5ee3fc3ab83cd7af1d37452c5cc9f501456b08040552cd8e53.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://table9mutant.wordpress.com/wp-content/uploads/2016/06/img_0009.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                          <img src="https://m.media-amazon.com/images/S/pv-target-images/2da26b36b5e08dd7bbc4f1f8c4a970566350945721fc538a17698918035f6b1e.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 6">
+                      </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://resizing.flixster.com/rkgRgbWUwIWYeQqvdocIDNUlZNs=/fit-in/352x330/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p18307_v_h9_au.jpg" class="img-fluid movie-recommendation-carousel" alt="Movie 8">
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <img src="https://dev.geekgirlauthority.com/wp-content/uploads/2022/11/MM-Nightmare-BC-Feature.jpg" class="img-fluid movie-recommendation-carousel d-none d-md-block" alt="Movie 9">
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+                      
+              <a class="carousel-control-prev" href="#carouselExampleIndicators15" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              
+              <a class="carousel-control-next" href="#carouselExampleIndicators15" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div> 
+            <hr class="text-white">  
+        </div>
+
+        <nav class="navbar navbar-expand-lg fixed-bottom">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav2">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item active">
+                <a class="nav-link m-1" href="index.html"><i class="bi bi-house"></i>Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link m-1" href="store.html"><i class="bi bi-bag"></i>
+                  Store</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link m-1" href="search.html"><i class="bi bi-search"></i>Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link m-1" href="downloads.html"><i class="bi bi-download"></i>Downloads</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link m-1" href="mystuff.html"><i class="bi bi-person-circle"></i>My Stuff</a>
+              </li>
+              
+            </ul>
+          </div>
+        </nav>       
+      </div>
+    </div>
+  </div>       
+</body>
+</html>
